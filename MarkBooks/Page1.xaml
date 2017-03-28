@@ -7,7 +7,16 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Page1">
-    <Grid>
-        
+    <Grid x:Name="Adding_Book" Background="#FFBCE8A8" Width="292" Height="265">
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="203,242,0,0"/>
+        <TextBlock x:Name="Autor" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,29,0,0" Width="55" Height="23" FontSize="16" Text="Autor:"/>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top" Margin="20,57,0,0" FontSize="16"/>
+        <TextBlock x:Name="Genres" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Genres:" VerticalAlignment="Top" Margin="20,83,0,0" FontSize="16"/>
+        <TextBlock x:Name="Content" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Content" VerticalAlignment="Top" Margin="20,109,0,0" FontSize="16"/>
+        <TextBox x:Name="autor" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Margin="102,29,0,0"/>
+        <TextBox x:Name="title" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Margin="102,57,0,0"/>
+        <TextBox x:Name="genre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Margin="102,85,0,0"/>
+        <TextBox x:Name="content" HorizontalAlignment="Left" Height="90" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Margin="20,135,0,0"/>
+
     </Grid>
 </Page>
