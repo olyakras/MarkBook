@@ -5,18 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarkBooks"
         mc:Ignorable="d"
-        Title="Main" Height="300" Width="300">
-    <Grid Background="#FFBCE8A8">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="281*"/>
-            <ColumnDefinition Width="11*"/>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="in_progress" Content="In progress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,22,0,0"/>
-        <Button x:Name="in_plan" Content="In plan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,56,0,0"/>
-        <Button x:Name="favourite" Content="Favourite" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,90,0,0"/>
-        <Button x:Name="finish" Content="Finish" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,126,0,0"/>
-        <ListBox x:Name="booklist" HorizontalAlignment="Left" Height="184" VerticalAlignment="Top" Width="165" Margin="106,22,0,0">
-            <ListBoxItem/>
-        </ListBox>
-    </Grid>
+        Title="Book Marks" Height="300" Width="300">
+    <Grid>
+    <Frame Name="frameMain" NavigationUIVisibility="Hidden" Navigated="frameMain_Navigated" Content="">
+
+    </Frame>
+</Grid>
 </Window>

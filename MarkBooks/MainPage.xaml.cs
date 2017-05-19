@@ -10,24 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MarkBooks
 {
     /// <summary>
-    /// Логика взаимодействия для Main.xaml
+    /// Логика взаимодействия для MainPage.xaml
     /// </summary>
-    public partial class Main : Window
+    public partial class MainPage : Page
     {
-        public Main()
+        public MainPage()
         {
             InitializeComponent();
-            frameMain.Navigate(new BeginPage());
-        }
-
-        private void frameMain_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
-        {
-
         }
     }
 }

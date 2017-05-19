@@ -16,13 +16,17 @@ using System.Windows.Shapes;
 namespace MarkBooks
 {
     /// <summary>
-    /// Логика взаимодействия для Page1.xaml
+    /// Логика взаимодействия для AddingPage.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class AddingPage : Page
     {
-        public Page1()
+        public AddingPage()
         {
             InitializeComponent();
         }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Pages.BeginPage);
+        }
     }
-}

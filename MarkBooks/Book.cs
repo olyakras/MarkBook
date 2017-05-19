@@ -10,21 +10,19 @@ namespace BookMarks_kdz
     {
         string _title = "";
         List<string> _autor = new List<string>();
-        List<string> _genre = new List<string>();
-        string _content = "";
+        string _genre;
 
 
-        private Book(string title, List<string> autor, List<string> genres, string content)
+        private Book(string title, List<string> autor, string genres)
         {
             _title = title;
             _autor = autor;
             _genre = genres;
-            _content = content;
         }
 
-        public void AddBook(string title, List<string> autor, List<string> genres, string content, List<Book> _booksList)
+        public void AddBook(string title, List<string> autor, string genres, List<Book> _booksList)
         {
-            Book _item = new Book(title, autor, genres, content);
+            Book _item = new Book(title, autor, genres);
             if (CheckRepeat(_booksList, title, autor))
                 _booksList.Add(_item);
         }
@@ -33,18 +31,5 @@ namespace BookMarks_kdz
         {
         }
 
-        public bool CheckRepeat(List<Book> _booksList, string title, List<string> autor)//дописать
-        {
-            for (int i = 0; i < _booksList.Count; i++)
-            {
-                if (_booksList[i]._title == title)
-                    for (int j = 0; j < autor.Count; j++)
-                    {
-
-
-                    }
-            }
-            return true;
-        }
     }
 }
