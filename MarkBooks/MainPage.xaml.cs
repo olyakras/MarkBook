@@ -24,5 +24,10 @@ namespace MarkBooks
         {
             InitializeComponent();
         }
+
+        private void searchButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Pages.SearchPage);
+        }
     }
 }

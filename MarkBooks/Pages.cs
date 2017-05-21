@@ -12,6 +12,7 @@ namespace MarkBooks
         private static RegisterPage _registerPage = new RegisterPage();
         private static MainPage _mainPage = new MainPage();
         private static AddingPage _addingPage = new AddingPage();
+        private static SearchPage _searchPage = new SearchPage();
 
         public static BeginPage BeginPage
         {
@@ -42,6 +43,14 @@ namespace MarkBooks
             get
             {
                 return _addingPage;
+            }
+        }
+
+        public static SearchPage SearchPage
+        {
+            get
+            {
+                return _searchPage;
             }
         }
     }

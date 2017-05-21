@@ -53,6 +53,8 @@ namespace MarkBooks
                 return;
             }
 
+            //add to file
+
             MessageBox.Show("Регистрация прошла успешна");
 
             NavigationService.Navigate(Pages.MainPage);

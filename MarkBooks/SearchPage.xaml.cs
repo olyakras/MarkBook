@@ -16,18 +16,18 @@ using System.Windows.Shapes;
 namespace MarkBooks
 {
     /// <summary>
-    /// Логика взаимодействия для AddingPage.xaml
+    /// Логика взаимодействия для SearchPage.xaml
     /// </summary>
-    public partial class AddingPage : Page
+    public partial class SearchPage : Page
     {
-        public AddingPage()
+        public SearchPage()
         {
             InitializeComponent();
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(Pages.MainPage);
-        }
+            NavigationService.Navigate(Pages.BeginPage);
+    }
     }
 }

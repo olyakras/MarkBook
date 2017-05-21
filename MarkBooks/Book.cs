@@ -4,31 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookMarks_kdz
+namespace MarkBooks
 {
     class Book
     {
         string _title = "";
-        List<string> _autor = new List<string>();
-        string _genre;
+        string _autor = "";
+        Genres _genre;
 
+        public string Title
+        {
+            get { return _title;}
+            set { _title = value;}
+        }
 
-        private Book(string title, List<string> autor, string genres)
+        public string Autor
+        {
+            get { return _autor;}
+            set { _autor = value;}
+        }
+
+        public Genres Genre
+        {
+            get { return _genre;}
+            set { _genre = value;}
+        }
+
+        public Book (string title, string autor, Genres genre)
         {
             _title = title;
             _autor = autor;
-            _genre = genres;
-        }
-
-        public void AddBook(string title, List<string> autor, string genres, List<Book> _booksList)
-        {
-            Book _item = new Book(title, autor, genres);
-            if (CheckRepeat(_booksList, title, autor))
-                _booksList.Add(_item);
-        }
-
-        public void DeleteBook(Book _item, List<Book> _booksList)
-        {
+            _genre = genre;
         }
 
     }

@@ -8,5 +8,9 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="MainPage">
 
-    <Grid x:Name="Main" Background="#FFAA764A"/>
+    <Grid x:Name="Main" Background="#FFAA764A">
+        <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="78,64,0,0" FontSize="16" FontFamily="Cooper Black" Height="50" Click="searchButton_Click"/>
+        <Button x:Name="bookMarksButton" Content="Book Marks" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="78,119,0,0" FontFamily="Cooper Black" FontSize="16" Height="50"/>
+        <Button x:Name="allBooksButton" Content="Show all books" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="78,174,0,0" Height="50" FontFamily="Cooper Black" FontSize="16" IsDefault="True"/>
+    </Grid>
 </Page>

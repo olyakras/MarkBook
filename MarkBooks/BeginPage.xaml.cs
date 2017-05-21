@@ -49,5 +49,11 @@ namespace MarkBooks
         {
             NavigationService.Navigate(Pages.RegisterPage);
         }
+
+        private void Page_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+                Register_Click(null, null);
+        }
     }
 }
